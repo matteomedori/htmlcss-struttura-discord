@@ -128,7 +128,6 @@ HEADER
 .navigation {
   max-width: 1250px;
   margin: 0 auto;
-  /* border: 3px dashed black; */
   display: flex;
   align-items: center;
   font-size: 25px;
