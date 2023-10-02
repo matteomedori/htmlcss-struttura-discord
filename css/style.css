@@ -34,6 +34,54 @@ DEBUG
   height: 420px;
 }
 
+.debug .first-section {
+  height: 630px;
+}
+
+.debug .firstsect-contain {
+  height: 520px;
+}
+
+.debug .firstsect-contain div:first-child,
+.debug .thirdsect-contain div:first-child {
+  background-color: #1e90ff;
+}
+
+.debug .firstsect-contain div:last-child,
+.debug .thirdsect-contain div:last-child {
+  background-color: #ffc0cb;
+}
+
+.debug .second-section,
+.debug .third-section {
+  height: 620px;
+}
+
+.debug .secondsect-contain,
+.debug .thirdsect-contain {
+  height: 520px;
+}
+
+.debug .secondsect-contain div:first-child {
+  background-color: #ffc0cb;
+}
+
+.debug .secondsect-contain div:last-child {
+  background-color: #1e90ff;
+}
+
+.debug .fourth-section {
+  height: 1040px;
+}
+
+.debug .fourthsect-contain {
+  height: 940px;
+}
+
+.debug .fourthsect-contain > div {
+  background-color: #228b22;
+}
+
 /*
 --------
 COMMON
@@ -61,15 +109,16 @@ HEADER
   align-items: center;
 }
 
-.navigation > div:nth-child(1),
-.navigation > div:nth-child(3) {
+#logo,
+.login {
   flex-grow: 1;
 }
 
-.navigation > div:nth-child(2) {
+.links {
   flex-grow: 3;
 }
-.navigation > div:nth-child(3) {
+
+.login {
   text-align: end;
 }
 
@@ -87,16 +136,58 @@ ul.link-list > li {
   margin: 0 5px;
 }
 
-.text-section > div {
+.text-section > .text {
   max-width: 945px;
   margin: 0 auto;
   border: 3px dashed black;
 }
+
 /*
 --------
 MAIN
 --------
 */
+
+.first-section {
+  padding: 55px 0;
+}
+
+.second-section,
+.third-section,
+.fourth-section {
+  padding: 50px 0;
+}
+
+.second-section,
+.fourth-section {
+  background-color: #d3d3d3;
+}
+
+.firstsect-contain,
+.secondsect-contain,
+.thirdsect-contain,
+.fourthsect-contain {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.sect > div {
+  border: 3px dashed black;
+}
+
+.firstsect-contain div:first-child,
+.thirdsect-contain div:first-child,
+.secondsect-contain div:last-child {
+  flex-grow: 1.5;
+}
+
+.firstsect-contain div:last-child,
+.thirdsect-contain div:last-child,
+.secondsect-contain div:first-child,
+.fourthsect-contain > div {
+  flex-grow: 1;
+}
 
 /*
 --------
