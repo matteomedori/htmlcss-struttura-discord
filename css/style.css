@@ -14,6 +14,25 @@ RESET
 DEBUG
 --------
 */
+.debug .nav-section {
+  height: 85px;
+  background-color: #add8e6;
+}
+
+.debug .text-section {
+  height: 520px;
+  background-color: #00008b;
+}
+
+.debug .navigation {
+  background-color: #daa520;
+  height: 55px;
+}
+
+.debug .text-section > div {
+  background-color: #ee82ee;
+  height: 420px;
+}
 
 /*
 --------
@@ -26,7 +45,53 @@ COMMON
 HEADER
 --------
 */
+.nav-section {
+  padding: 15px 0;
+}
 
+.text-section {
+  padding: 50px 0;
+}
+
+.navigation {
+  max-width: 1250px;
+  margin: 0 auto;
+  border: 3px dashed black;
+  display: flex;
+  align-items: center;
+}
+
+.navigation > div:nth-child(1),
+.navigation > div:nth-child(3) {
+  flex-grow: 1;
+}
+
+.navigation > div:nth-child(2) {
+  flex-grow: 3;
+}
+.navigation > div:nth-child(3) {
+  text-align: end;
+}
+
+.navigation > div {
+  padding: 10px;
+}
+
+ul.link-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul.link-list > li {
+  margin: 0 5px;
+}
+
+.text-section > div {
+  max-width: 945px;
+  margin: 0 auto;
+  border: 3px dashed black;
+}
 /*
 --------
 MAIN
